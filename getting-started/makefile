@@ -6,6 +6,7 @@ CFLAGS = -Wall -Wextra -std=c++11 # Compiler flags
 # Rule to build and run the specified .cpp file
 %: %.cpp
 	$(CC) $(CFLAGS) -o $@ $<
+	echo "Starting program: \n"
 	./$@
 	rm $@ 
 
